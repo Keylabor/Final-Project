@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    background-color: #f0f0f0;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+header {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 600px;
+}
+
+.navbar a:hover {
+    color: #007BFF;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .option-bar ul {
+        gap: 1rem;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .option-bar li {
+        min-width: 90px;
+    }
+}
+
+.option-bar {
+    position: sticky;
+    top: 73px;
+    z-index: 1000;
+}
+
+.option-bar li {
+    text-align: center;
+}
+
+.option-dropdown select {
+    color: rgb(38, 135, 226);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.option-bar ul {
+    color: rgb(38, 135, 226);
+    background-color: rgb(199, 224, 245);
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.style-but {
+    text-decoration: none;
+}
+
+.button1 {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button1:hover {
+    color: white;
+    background-color: rgb(38, 135, 226);
+    padding: 10px 25px;
+}
+
+.button2 {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button2:hover {
+    color: white;
+    background-color: rgb(38, 135, 226);
+    padding: 10px 25px;
+}
+
+.button3 {
+    padding: 10px 33px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button3:hover {
+    color: white;
+    background-color: rgb(38, 135, 226);
+    padding: 10px 33px;
+}
+
+.button4 {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button4:hover {
+    color: white;
+    background-color: rgb(38, 135, 226);
+    padding: 10px 30px;
+}
+
+.button5 {
+    color: white;
+    background-color: rgb(38, 135, 226);
+    padding: 10px 23px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.button5:hover {
+    color: white;
+    background-color: rgb(97, 173, 243);
+    padding: 10px 23px;
+}
+
+.box-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    padding: 0 0 20px 0;
+    border: none;
+    border-radius: 15px;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-height: 350px;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+.box:active {
+    transform: scale(0.98);
+}
+
+.box img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-right img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 5%;
+    }
+
+    .three-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
